@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body {
+    background-color: brown;
+    color: white;
+}
+
+.background {
+    text-align: center;
+    margin-top: 300px;
+}
+
+input {
+    width: 600px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn1 {
+    padding: 9px;
+    border-radius: 10px;
+    background-color: green;
+    border: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.btn2 {
+    padding: 9px;
+    border-radius: 10px;
+    background-color: green;
+    border: none;
+    color: white;
+    margin-left: 10px;
+}
+
+#display {
+    color: white;
+    margin-top: 50px;
+    font-size: 25px;
+}
