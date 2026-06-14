@@ -17,11 +17,10 @@
 // allStudents.unshift('Olayinka')
 // allStudents.shift()
 // allStudents.pop()
-
 // console.log(allStudents);
 
 
-const allStudent = JSON.parse(localStorage.getItem('items')) || []
+const allStudent = JSON.parse(localStorage.getItem('itemz')) || []
 
 const showAll = () => {
     showName()
@@ -45,7 +44,7 @@ const addStudent = () => {
         // console.log(studentName.value);
         allStudent.push(studentName.value)
         const stringified = JSON.stringify(allStudent)
-        localStorage.setItem('items', stringified)
+        localStorage.setItem('itemz', stringified)
         toast('Name Added!')
         studentName.value = ''
         display.innerHTML = ''
@@ -75,7 +74,7 @@ const deleteItem = (index) => {
         if (promting === 'DELETE') {
             allStudent.splice(index, 1)
             const stringified = JSON.stringify(allStudent)
-            localStorage.setItem('items', stringified)
+            localStorage.setItem('itemz', stringified)
             showName()
         } else {
             alert('Type correct information')
@@ -120,7 +119,7 @@ const saveEdit = () => {
         toast('Empty Input')
     } else {
         allStudent.splice(gottenIndex, 1, editName.value)
-        localStorage.setItem('items', JSON.stringify(allStudent))
+        localStorage.setItem('itemz', JSON.stringify(allStudent))
         toast('Edited successfully')
         showName()
 
